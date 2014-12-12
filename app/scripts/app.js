@@ -4,7 +4,13 @@ angular.module('twitChatApp', [
   'ngCookies',
   'ngResource',
   'ngSanitize',
-  'ngRoute'
+  'ngRoute',
+  'angularjs.media.directives',
+  'bardo.directives',
+  'ui.bootstrap',
+  'angular-underscore',
+  'luegg.directives'
+
 ])
   .config(function ($routeProvider) {
     $routeProvider

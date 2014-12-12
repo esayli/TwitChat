@@ -1,0 +1,26 @@
+.marquee {
+  width: 10000000px;
+  margin: 0 auto;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  -webkit-animation: marquee 10s linear; /* Chrome, Safari, Opera */
+  animation: marquee 10s linear;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes marquee {
+  0%   { text-indent: 27.5em }
+  100% { text-indent: -105em }
+}
+
+/* Standard syntax */
+@keyframes marquee {
+  0%   { text-indent: 27.5em }
+  100% { text-indent: -105em }
+}
+
+.flexslider-container {
+  width: 500px;
+  margin: 10px auto;
+}

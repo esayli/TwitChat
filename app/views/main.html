@@ -1,16 +1,43 @@
 <div class="header">
 
-  <h3 class="text-muted">TwitChat</h3>
-    <div class="container">
-
-        <div id="datetime">
-            <h1>{{ date.raw | date:'hh mm ss' }}</h1>
-        </div>
-
-    </div>
 </div>
 
+<div class="body" style="width:100% !important; ; height: 95% !important;">
 
-<div class="footer">
-  <p>♥ from the TwitChat team</p>
+  <script type="text/ng-template" id="optionalCustomTemplate.html">
+    <div ng-repeat="card in media" class="slide" on-finish-render="init()">
+
+    </div>
+  </script>
+
+  <webview src="http://www.twitch.tv/trumpsc/popout" style="width: 100% !important; height: 100% !important;" width="640px" height="480px" autosize="on"></webview>
+
+  <!--<div style="position: fixed; bottom: 0px; right: 50px;">-->
+    <!--<label class="btn btn-primary" ng-click="fullScreen()" btn-checkbox>Full Screen</label>-->
+  <!--</div>-->
+
+</div>
+
+<div class="footer" style=" position: fixed;
+    bottom: 1px;
+    left:0px;
+    height: 5%;
+    width: 100%;">
+
+  <div style="position:relative; float:left; width: 85%; height: 45px;">
+    <slick settings="slickConfig" control="slickHandle" media="media" src="optionalCustomTemplate.html">
+    </slick>
+
+  </div>
+
+  <div style="position: relative; float: right; width: 5%">
+    <label class="btn btn-primary" style="position:relative;float: right; padding:12px 6px 12px 6px !important;" ng-click="sendMessage(newMessage); newMessage='';fullScreen()" btn-checkbox>Chat</label>
+  </div>
+  <div style="position: relative; float: right; width: 10%; height: 45px;">
+    <textarea id="message" ng-model="newMessage"></textarea>
+  </div>
+
+
+
+
 </div>
