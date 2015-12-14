@@ -7,22 +7,9 @@ TwitChat
 
 ## description
 
-Google chrome extension for twitch chat
+Google chrome extension for twitch chat. It was a project for university class. Never had to time to finish it.
 
-## mind map
-
-
-## scenario of the usage
-
-
-## mock-up
-
-
-## product justification meeting
-
-
-## milestones
-
+I will finish when I have time.
 
 ## License
 
