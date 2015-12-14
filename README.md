@@ -7,9 +7,11 @@ TwitChat
 
 ## description
 
-Google chrome extension for twitch chat. It was a project for university class. Never had to time to finish it.
+Google chrome extension for twitch chat. It uses google extension API and AngularJs to make chat horizontal.
 
-I will finish when I have time.
+
+It was almost done.. a project for university class. Never had to time to finish it.
+
 
 ## License
 
